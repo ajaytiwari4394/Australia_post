@@ -1,0 +1,279 @@
+<apex:page controller="datasan.AddressController">
+    
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://s3-ap-southeast-2.amazonaws.com/datasan/1.2/datasan.min.js"></script>
+  
+<script>
+    jQuery(document).ready(function() {  
+        datasan.init({
+            key : "{!JSINHTMLENCODE(dsSetting.key)}",
+            harmonyHostedApiUrl : "{!JSINHTMLENCODE(dsSetting.endpoint)}",
+            theme : "flick"
+        });
+    });
+</script>
+    
+<apex:sectionHeader title="{!objectLabel}" subtitle="{!recordName}"/>
+
+<apex:pageMessages />
+
+<apex:form >
+
+<apex:pageBlock title="" mode="edit" rendered="{!RenderAddressForm}">
+
+    <apex:repeat value="{!accountLookups}" var="a">        
+    <apex:pageBlockSection title="{!a.name}" columns="1">
+        <apex:pageBlockSectionItem id="companyNameHeading">
+            <apex:outputText value="Enter a company name below and click Company Lookup to lookup the ABN."/>
+        </apex:pageBlockSectionItem>
+        <apex:outputText value=""/>
+        
+        <apex:pageBlockSectionItem id="accountItem">
+            <apex:outputLabel value="{!$Label.datasan__account_label}" for="account"/>
+            <apex:inputText id="account" styleClass="accountItem_account" value="{!a.account}"/>
+        </apex:pageBlockSectionItem>    
+
+        <apex:pageBlockSectionItem id="abnItem">
+            <apex:outputLabel value="ABN" for="abn"/>
+            <apex:inputText id="abn" styleClass="abnItem_abn" value="{!a.abn}" html-readonly="true"/>
+        </apex:pageBlockSectionItem>
+        
+        <script>
+            datasan.lookupABN(
+                "{!$Component.accountItem.account}",
+                {   select: [
+                            {id: "{!$Component.abnItem.abn}",    value: "{abn}"}
+                            ]
+                }          
+            );
+            jQuery(".accountItem_account").change(function() {
+                jQuery(".abnItem_abn").val("");
+            });
+                
+        </script>
+    </apex:pageBlockSection>
+    </apex:repeat>        
+        
+    <apex:pageBlockButtons >
+        <apex:commandButton action="{!save}" value="Save"/>
+        <apex:commandButton action="{!cancel}" value="Cancel"/>
+    </apex:pageBlockButtons>
+
+    <apex:repeat value="{!addresses}" var="a"> 
+    <apex:pageBlockSection id="section" title="{!a.name}" columns="2" dir="">    
+
+        <apex:pageBlockSectionItem id="addressHeading">
+            <apex:outputText value="Lookup an address below. Address fields will be filled on the right side."/>
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+            <apex:outputText />
+        </apex:pageBlockSectionItem>                
+        <apex:outputText />
+        <apex:outputText /> 
+        
+        <apex:pageBlockSectionItem id="sotList">
+            <apex:outputText value="Choose source of truth: "/>
+            <apex:selectList id="sot" size="1" value="{!a.sot}">
+                <apex:selectOptions value="{!availableSOTs}"/>
+                <!--<apex:selectoption itemLabel="Australian postal addresses (AUPAF)" itemValue="AUPAF"></apex:selectoption>
+                <apex:selectoption itemLabel="Australian geo-coded addresses (GNAF)" itemValue="GNAF"></apex:selectoption>
+                <apex:selectoption itemLabel="All Australian addresses (AUSOTS)" itemValue="AUSOTS"></apex:selectoption>
+                <apex:selectoption itemLabel="New Zealand post addresses (NZPAF)" itemValue="NZPAF"></apex:selectoption>-->
+                <apex:actionSupport event="onchange" rerender="section" status="actionStatus"/>
+            </apex:selectList>
+        </apex:pageBlockSectionItem>
+        
+        <apex:pageBlockSectionItem >
+            <apex:actionStatus id="actionStatus">
+                <apex:facet name="start">
+                    <apex:outputText style="font-weight:bold;font-size:16px;color:red;" value="Loading Fields..."/>
+                </apex:facet>
+            </apex:actionStatus>
+        </apex:pageBlockSectionItem>                
+        <apex:outputText />
+        <apex:outputText /> 
+        
+        <apex:pageBlockSectionItem id="cityInputItem">
+            <apex:outputLabel value="Enter Suburb, City or Postcode" for="cityInput" />
+            <apex:inputText id="cityInput" tabindex="0" />
+        </apex:pageBlockSectionItem> 
+        
+        <apex:pageBlockSectionItem id="streetItem">
+            <apex:outputLabel value="{!IF(a.sot=='GNAF',"Street", "Street / PostalBox")}" />
+            <apex:inputText id="street" value="{!a.street}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>                     
+
+        <apex:pageBlockSectionItem id="streetInputItem">
+            <apex:outputLabel value="Enter Street" for="streetInput"/>
+            <apex:inputText id="streetInput" tabindex="0" />
+        </apex:pageBlockSectionItem>     
+        
+        <apex:pageBlockSectionItem id="cityItem">
+            <apex:outputLabel value="{!IF(a.sot=='NZPAF',"Suburb", "City")}" />
+            <apex:inputText id="city" value="{!a.city}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem />
+        
+        <apex:pageBlockSectionItem id="stateItem">
+            <apex:outputLabel value="{!IF(a.sot=='NZPAF',"TownCity", "State")}" />
+            <apex:inputText id="state" value="{!a.state}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>  
+        <apex:pageBlockSectionItem />
+        
+        <apex:pageBlockSectionItem id="postcodeItem">
+            <apex:outputLabel value="Postcode" />
+            <apex:inputText id="postcode" value="{!a.postcode}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>  
+        <apex:pageBlockSectionItem />
+        
+        <apex:pageBlockSectionItem id="countryItem">
+            <apex:outputLabel value="Country" />
+            <apex:inputText id="country" value="{!a.country}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>  
+        <apex:pageBlockSectionItem />
+        
+        <apex:pageBlockSectionItem id="dpidItem" rendered="{!(a.showDPID && a.sot!='GNAF')}">
+            <apex:outputLabel value="DPID" />
+            <apex:inputText id="dpid" value="{!a.dpid}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem id="gnafpidItem" rendered="{!(a.showGNAFPID && a.sot=='GNAF')}">
+            <apex:outputLabel value="GNAFPID" />
+            <apex:inputText id="gnafpid" value="{!a.gnafpid}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!((a.showDPID && a.sot!='GNAF') || (a.showGNAFPID && a.sot=='GNAF'))}"/>
+        
+        <apex:pageBlockSectionItem id="barcodeItem" rendered="{!(a.showBarcode && (a.sot!='NZPAF' && a.sot!='GNAF'))}">
+            <apex:outputLabel value="Barcode" />
+            <apex:inputText id="barcode" value="{!a.barcode}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>  
+        <apex:pageBlockSectionItem rendered="{!(a.showBarcode && (a.sot!='NZPAF' && a.sot!='GNAF'))}"/>
+        
+        <apex:pageBlockSectionItem id="bspItem" rendered="{!(a.showBsp && (a.sot!='NZPAF' && a.sot!='GNAF'))}">
+            <apex:outputLabel value="Bsp" />
+            <apex:inputText id="bsp" value="{!a.bsp}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>  
+        <apex:pageBlockSectionItem rendered="{!(a.showBsp && (a.sot!='NZPAF' && a.sot!='GNAF'))}"/>
+        
+        <apex:pageBlockSectionItem id="meshBlockItem" rendered="{!(a.showMeshBlock && (a.sot=='NZPAF' || a.sot=='GNAF'))}">
+            <apex:outputLabel value="MeshBlock" />
+            <apex:inputText id="meshBlock" value="{!a.meshBlock}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>  
+        <apex:pageBlockSectionItem rendered="{!(a.showMeshBlock && (a.sot=='NZPAF' || a.sot=='GNAF'))}"/>
+        
+        <apex:pageBlockSectionItem id="latLongItem" rendered="{!(a.showLatLong && (a.sot=='NZPAF' || a.sot=='GNAF'))}">
+            <apex:outputLabel value="LatLong" />
+            <apex:inputText id="latLong" value="{!a.latLong}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!(a.showLatLong && (a.sot=='NZPAF' || a.sot=='GNAF'))}"/>
+        
+        <apex:pageBlockSectionItem id="gnafGroupPidItem" rendered="{!(a.showGNAFGroupPID && a.sot=='GNAF')}">
+            <apex:outputLabel value="GNAFGroupPID" />
+            <apex:inputText id="gnafGroupPid" value="{!a.gnafGroupPid}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!(a.showGNAFGroupPID && a.sot=='GNAF')}"/>
+        
+        <apex:pageBlockSectionItem id="gnafPointPidItem" rendered="{!(a.showGNAFPointPID && a.sot=='GNAF')}">
+            <apex:outputLabel value="GNAFPointPID" />
+            <apex:inputText id="gnafPointPid" value="{!a.gnafPointPid}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!(a.showGNAFPointPID && a.sot=='GNAF')}"/>
+        
+        <apex:pageBlockSectionItem id="gnafReliabilityItem" rendered="{!(a.showGNAFReliability && a.sot=='GNAF')}">
+            <apex:outputLabel value="GNAFReliability" />
+            <apex:inputText id="gnafReliability" value="{!a.gnafReliability}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!(a.showGNAFReliability && a.sot=='GNAF')}"/>
+        
+        <apex:pageBlockSectionItem id="gnafConfidenceItem" rendered="{!(a.showGNAFConfidence && a.sot=='GNAF')}">
+            <apex:outputLabel value="GNAFConfidence" />
+            <apex:inputText id="gnafConfidence" value="{!a.gnafConfidence}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!(a.showGNAFConfidence && a.sot=='GNAF')}"/>
+        
+        <apex:pageBlockSectionItem id="geocodeLevelItem" rendered="{!(a.showGeocodeLevel && a.sot=='GNAF')}">
+            <apex:outputLabel value="GeocodeLevel" />
+            <apex:inputText id="geocodeLevel" value="{!a.geocodeLevel}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!(a.showGeocodeLevel && a.sot=='GNAF')}"/>
+        
+        <apex:pageBlockSectionItem id="parcelIdItem" rendered="{!(a.showParcelID && (a.sot=='NZPAF' || a.sot=='GNAF'))}">
+            <apex:outputLabel value="ParcelID" />
+            <apex:inputText id="parcelId" value="{!a.parcelId}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!(a.showParcelID && (a.sot=='NZPAF' || a.sot=='GNAF'))}"/>
+        
+        <apex:pageBlockSectionItem id="xyCoordinateItem" rendered="{!(a.showXYCoordinate && a.sot=='NZPAF')}">
+            <apex:outputLabel value="MapGrid" />
+            <apex:inputText id="xyCoordinate" value="{!a.xyCoordinate}" html-readonly="true" tabindex="1"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem rendered="{!(a.showXYCoordinate && a.sot=='NZPAF')}"/>
+
+        <script>
+            datasan.autoCompleteLocality(
+                "{!$Component.cityInputItem.cityInput}",
+                {   
+                    sot   : "{!$Component.sotList.sot}",
+                    menu  : {label: "{locality_name}{suburb}{postal_delivery_type} {state}{townCity}, {postcode}", value: "{locality_name}{suburb}{postal_delivery_type} {state}{townCity}, {postcode}"},
+                    select: [
+                            {id: "{!$Component.cityItem.city}",    value: "{locality_name}{suburb}{postal_delivery_type}"},
+                            {id: "{!$Component.postcodeItem.postcode}",     value: "{postcode}"},
+                            {id: "{!$Component.stateItem.state}",   value: "{state}{townCity}"},
+                            {id: "{!$Component.countryItem.country}",  value: "{country}"},
+                            {id: "{!$Component.streetItem.street}",  value: ""},
+                            {id: "{!$Component.dpidItem.dpid}",  value: ""},
+                            {id: "{!$Component.barcodeItem.barcode}",  value: ""},
+                            {id: "{!$Component.bspItem.bsp}",  value: ""},
+                            {id: "{!$Component.gnafpidItem.gnafpid}",  value: ""},
+                            {id: "{!$Component.meshBlockItem.meshBlock}",  value: ""},
+                            {id: "{!$Component.latLongItem.latLong}",  value: ""},
+                            {id: "{!$Component.gnafGroupPidItem.gnafGroupPid}",  value: ""},
+                            {id: "{!$Component.gnafPointPidItem.gnafPointPid}",  value: ""},
+                            {id: "{!$Component.gnafReliabilityItem.gnafReliability}",  value: ""},
+                            {id: "{!$Component.gnafConfidenceItem.gnafConfidence}",  value: ""},
+                            {id: "{!$Component.geocodeLevelItem.geocodeLevel}",  value: ""},
+                            {id: "{!$Component.parcelIdItem.parcelId}",  value: ""},
+                            {id: "{!$Component.xyCoordinateItem.xyCoordinate}",  value: ""}                                                                 
+                            ]
+                }
+            );
+        
+            datasan.autoCompleteAddress(
+                "{!$Component.streetInputItem.streetInput}",
+                {   locality : {city :"{!$Component.cityItem.city}", postcode : "{!$Component.postcodeItem.postcode}"},
+                    sot   : "{!$Component.sotList.sot}",
+                    localityInput :  "{!$Component.cityInputItem.cityInput}",
+                    menu  : {label: "<b>{address_line_1}</b><br/>{locality_name}{suburb}{postal_delivery_type} {state}{townCity}, {postcode}", value: "{address_line_1}"},
+                    select: [
+                            {id: "{!$Component.cityItem.city}",    value: "{locality_name}{suburb}{postal_delivery_type}"},
+                            {id: "{!$Component.postcodeItem.postcode}",     value: "{postcode}"},
+                            {id: "{!$Component.stateItem.state}",   value: "{state}{townCity}"},
+                            {id: "{!$Component.streetItem.street}",  value: "{address_line_1}"},
+                            {id: "{!$Component.countryItem.country}",  value: "{country}"},
+                            {id: "{!$Component.dpidItem.dpid}",  value: "{delivery_point_id}"},
+                            {id: "{!$Component.barcodeItem.barcode}",  value: "{Barcode}"},
+                            {id: "{!$Component.bspItem.bsp}",  value: "{Bsp}"},
+                            {id: "{!$Component.gnafpidItem.gnafpid}",  value: "{delivery_point_id}"},
+                            {id: "{!$Component.meshBlockItem.meshBlock}",  value: "{MeshblockId}"},
+                            {id: "{!$Component.latLongItem.latLong}",  value: "{Latitude} {Longitude}"},
+                            {id: "{!$Component.gnafGroupPidItem.gnafGroupPid}",  value: "{GNAFGroupPID}"},
+                            {id: "{!$Component.gnafPointPidItem.gnafPointPid}",  value: "{GNAFPointPID}"},
+                            {id: "{!$Component.gnafReliabilityItem.gnafReliability}",  value: "{GNAFReliability}"},
+                            {id: "{!$Component.gnafConfidenceItem.gnafConfidence}",  value: "{GNAFConfidence}"},
+                            {id: "{!$Component.geocodeLevelItem.geocodeLevel}",  value: "{GeocodeLevel}"},
+                            {id: "{!$Component.parcelIdItem.parcelId}",  value: "{ParcelId}{ParcelID}"},
+                            {id: "{!$Component.xyCoordinateItem.xyCoordinate}",  value: "{XCoordinate} {YCoordinate}"}          
+                            ]
+                }
+            );
+        </script>
+
+    </apex:pageBlockSection>    
+    </apex:repeat>    
+    
+</apex:pageBlock>
+
+</apex:form>
+
+</apex:page>

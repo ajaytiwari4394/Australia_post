@@ -1,0 +1,60 @@
+<apex:page controller="SDOC.SDConfig" lightningStylesheets="true">
+
+  <apex:outputPanel id="mainPanel">
+    <apex:form >
+
+      <apex:outputPanel rendered="{!NOT(choseLanguage)}">
+        <apex:pageBlock title="Change S-Sign Verbiage">
+
+          <apex:outputPanel rendered="{!showLanguagePicklist}">
+            <apex:selectList value="{!languagePicklist}" size="1">
+              <apex:selectOptions value="{!languages}" />
+            </apex:selectList>
+            <apex:commandButton value="Edit the translations for this language"
+            action="{!loadTranslationTemplate}"
+            reRender="mainPanel" />
+          </apex:outputPanel>
+          <br />
+
+          <apex:actionFunction name="rerenderCreateNewBtn" action="{!doNothing}" reRender="createNewBtn" />
+          <apex:inputText value="{!languageInputText}" onkeyup="rerenderCreateNewBtn();" />
+          <apex:commandButton value="Define new translations for this language" 
+          id="createNewBtn"
+          action="{!createNewTranslationTemplate}"
+          disabled="{!languageInputText == ''}"
+          reRender="mainPanel" />
+
+        </apex:pageBlock>
+      </apex:outputPanel>
+
+      <apex:outputPanel rendered="{!choseLanguage}">
+        <apex:pageBlock title="Change S-Sign Verbiage">
+
+          <apex:pageBlockButtons >
+            <apex:commandButton value="Save Translation Template" action="{!saveTranslationTemplate}"
+            oncomplete="alert('Saved translation settings');"
+            reRender="mainPanel" />
+          </apex:pageBlockButtons>
+
+          <apex:pageBlockTable value="{!translationKeys}" var="key">
+            <apex:column >
+              <table>
+                <tr>
+                  <td style="width:400px; padding-right: 24px;">
+                    <apex:outputText value="{!key}" />
+                  </td>
+                  <td style="width:400px;">
+                    <apex:inputTextarea value="{!translationMap[key]}" style="width: 400px; height: 48px;" />
+                  </td>
+                </tr>
+              </table>
+            </apex:column>
+          </apex:pageBlockTable>
+          
+        </apex:pageBlock>
+      </apex:outputPanel>
+
+    </apex:form>
+  </apex:outputPanel>
+
+</apex:page>

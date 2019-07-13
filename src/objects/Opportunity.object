@@ -1,0 +1,3148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>New_Awesome_Companct_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>New_Awesome_Companct_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Status__c</fields>
+        <fields>StageName</fields>
+        <fields>AccountId</fields>
+        <fields>Payment_Method__c</fields>
+        <fields>Amount</fields>
+        <fields>CloseDate</fields>
+        <fields>HC_Leader__c</fields>
+        <label>New Awesome Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Budget_Confirmed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Budget Confirmed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cert_Sent_to_Printer__c</fullName>
+        <description>Date the certificate print request was sent to the printer</description>
+        <externalId>false</externalId>
+        <label>Date Certificate Sent to Printer</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Certificate_Tracking_Number__c</fullName>
+        <description>Tracking number from Courier for Certificate</description>
+        <externalId>false</externalId>
+        <label>Certificate Courier Tracking Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Complex_Cases_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>Complex Cases Received</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Conf_Workshop_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Conf Workshop 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CPD Points Uploaded</fullName>
+                    <default>false</default>
+                    <label>CPD Points Uploaded</label>
+                </value>
+                <value>
+                    <fullName>Did not attend</fullName>
+                    <default>false</default>
+                    <label>Did not attend</label>
+                </value>
+                <value>
+                    <fullName>WaitList</fullName>
+                    <default>false</default>
+                    <label>WaitList</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Conf_Workshop_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Conf Workshop 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CPD Points Uploaded</fullName>
+                    <default>false</default>
+                    <label>CPD Points Uploaded</label>
+                </value>
+                <value>
+                    <fullName>Did not attend</fullName>
+                    <default>false</default>
+                    <label>Did not attend</label>
+                </value>
+                <value>
+                    <fullName>WaitList</fullName>
+                    <default>false</default>
+                    <label>WaitList</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Conference_Dinner__c</fullName>
+        <externalId>false</externalId>
+        <label>Conference Dinner</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1 Ticket</fullName>
+                    <default>false</default>
+                    <label>1 Ticket</label>
+                </value>
+                <value>
+                    <fullName>2 Tickets</fullName>
+                    <default>false</default>
+                    <label>2 Tickets</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Copy_of_Professional_Requirement_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Copy of Professional Requirement 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AU</fullName>
+                    <default>false</default>
+                    <label>AU</label>
+                </value>
+                <value>
+                    <fullName>US</fullName>
+                    <default>false</default>
+                    <label>US</label>
+                </value>
+                <value>
+                    <fullName>WEB</fullName>
+                    <default>false</default>
+                    <label>WEB</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CouponCode__c</fullName>
+        <externalId>false</externalId>
+        <label>CouponCode</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Course_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Course Code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACDER</fullName>
+                    <default>false</default>
+                    <label>ACDER</label>
+                </value>
+                <value>
+                    <fullName>ADDER</fullName>
+                    <default>false</default>
+                    <label>ADDER</label>
+                </value>
+                <value>
+                    <fullName>ADERM</fullName>
+                    <default>false</default>
+                    <label>ADERM</label>
+                </value>
+                <value>
+                    <fullName>ADSGHN</fullName>
+                    <default>false</default>
+                    <label>ADSGHN</label>
+                </value>
+                <value>
+                    <fullName>ADSGNL</fullName>
+                    <default>false</default>
+                    <label>ADSGNL</label>
+                </value>
+                <value>
+                    <fullName>ADSUG</fullName>
+                    <default>false</default>
+                    <label>ADSUG</label>
+                </value>
+                <value>
+                    <fullName>ASTH1</fullName>
+                    <default>false</default>
+                    <label>ASTH1</label>
+                </value>
+                <value>
+                    <fullName>Business Course</fullName>
+                    <default>false</default>
+                    <label>Business Course</label>
+                </value>
+                <value>
+                    <fullName>CIM</fullName>
+                    <default>false</default>
+                    <label>CIM</label>
+                </value>
+                <value>
+                    <fullName>CLATT</fullName>
+                    <default>false</default>
+                    <label>CLATT</label>
+                </value>
+                <value>
+                    <fullName>Conference 2010</fullName>
+                    <default>false</default>
+                    <label>Conference 2010</label>
+                </value>
+                <value>
+                    <fullName>Conference 2011</fullName>
+                    <default>false</default>
+                    <label>Conference 2011</label>
+                </value>
+                <value>
+                    <fullName>Conference 2012</fullName>
+                    <default>false</default>
+                    <label>Conference 2012</label>
+                </value>
+                <value>
+                    <fullName>conference 2013</fullName>
+                    <default>false</default>
+                    <label>conference 2013</label>
+                </value>
+                <value>
+                    <fullName>CVD</fullName>
+                    <default>false</default>
+                    <label>CVD</label>
+                </value>
+                <value>
+                    <fullName>DBTB</fullName>
+                    <default>false</default>
+                    <label>DBTB</label>
+                </value>
+                <value>
+                    <fullName>DELDIN</fullName>
+                    <default>false</default>
+                    <label>DELDIN</label>
+                </value>
+                <value>
+                    <fullName>DIPDER</fullName>
+                    <default>false</default>
+                    <label>DIPDER</label>
+                </value>
+                <value>
+                    <fullName>DPATH</fullName>
+                    <default>false</default>
+                    <label>DPATH</label>
+                </value>
+                <value>
+                    <fullName>GDERM</fullName>
+                    <default>false</default>
+                    <label>GDERM</label>
+                </value>
+                <value>
+                    <fullName>GPUPD</fullName>
+                    <default>false</default>
+                    <label>GPUPD</label>
+                </value>
+                <value>
+                    <fullName>IM</fullName>
+                    <default>false</default>
+                    <label>IM</label>
+                </value>
+                <value>
+                    <fullName>MBMM</fullName>
+                    <default>false</default>
+                    <label>MBMM</label>
+                </value>
+                <value>
+                    <fullName>MCLAS</fullName>
+                    <default>false</default>
+                    <label>MCLAS</label>
+                </value>
+                <value>
+                    <fullName>Monash PCOP</fullName>
+                    <default>false</default>
+                    <label>Monash PCOP</label>
+                </value>
+                <value>
+                    <fullName>NICEUK</fullName>
+                    <default>false</default>
+                    <label>NICEUK</label>
+                </value>
+                <value>
+                    <fullName>PCDER</fullName>
+                    <default>false</default>
+                    <label>PCDER</label>
+                </value>
+                <value>
+                    <fullName>PCOP</fullName>
+                    <default>false</default>
+                    <label>PCOP</label>
+                </value>
+                <value>
+                    <fullName>SCCONF</fullName>
+                    <default>false</default>
+                    <label>SCCONF</label>
+                </value>
+                <value>
+                    <fullName>SCFOR</fullName>
+                    <default>false</default>
+                    <label>SCFOR</label>
+                </value>
+                <value>
+                    <fullName>SCMAS</fullName>
+                    <default>false</default>
+                    <label>SCMAS</label>
+                </value>
+                <value>
+                    <fullName>SCMED</fullName>
+                    <default>false</default>
+                    <label>SCMED</label>
+                </value>
+                <value>
+                    <fullName>SCMED2</fullName>
+                    <default>false</default>
+                    <label>SCMED2</label>
+                </value>
+                <value>
+                    <fullName>SCONF</fullName>
+                    <default>false</default>
+                    <label>SCONF</label>
+                </value>
+                <value>
+                    <fullName>SCSUG</fullName>
+                    <default>false</default>
+                    <label>SCSUG</label>
+                </value>
+                <value>
+                    <fullName>SCTIC</fullName>
+                    <default>false</default>
+                    <label>SCTIC</label>
+                </value>
+                <value>
+                    <fullName>SCVIN</fullName>
+                    <default>false</default>
+                    <label>SCVIN</label>
+                </value>
+                <value>
+                    <fullName>SKINBUS</fullName>
+                    <default>false</default>
+                    <label>SKINBUS</label>
+                </value>
+                <value>
+                    <fullName>TMT</fullName>
+                    <default>false</default>
+                    <label>TMT</label>
+                </value>
+                <value>
+                    <fullName>WCDERM</fullName>
+                    <default>false</default>
+                    <label>WCDERM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Course_Evaluation_Improvement__c</fullName>
+        <description>NPS Evaluation comment as to one improvement for this course</description>
+        <externalId>false</externalId>
+        <label>Course Evaluation - Improvement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Course_Evaluation_NPS__c</fullName>
+        <description>The NPS of the individual course</description>
+        <externalId>false</externalId>
+        <label>Course Evaluation NPS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Course_Evaluation_Why_gave_this_score__c</fullName>
+        <description>NPS comment of why attendee gave this score for the course</description>
+        <externalId>false</externalId>
+        <label>Course Evaluation - Why gave this score</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Course_Prerequisites_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Course Prerequisites Complete</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Courses_Interested_In__c</fullName>
+        <externalId>false</externalId>
+        <label>Courses Interested In</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACDER</fullName>
+                    <default>false</default>
+                    <label>ACDER</label>
+                </value>
+                <value>
+                    <fullName>ADERM</fullName>
+                    <default>false</default>
+                    <label>ADERM</label>
+                </value>
+                <value>
+                    <fullName>ADERM Online</fullName>
+                    <default>false</default>
+                    <label>ADERM Online</label>
+                </value>
+                <value>
+                    <fullName>ADSGHN</fullName>
+                    <default>false</default>
+                    <label>ADSGHN</label>
+                </value>
+                <value>
+                    <fullName>ADSGNL</fullName>
+                    <default>false</default>
+                    <label>ADSGNL</label>
+                </value>
+                <value>
+                    <fullName>ASTH1</fullName>
+                    <default>false</default>
+                    <label>ASTH1</label>
+                </value>
+                <value>
+                    <fullName>CLATT</fullName>
+                    <default>false</default>
+                    <label>CLATT</label>
+                </value>
+                <value>
+                    <fullName>DIPDER</fullName>
+                    <default>false</default>
+                    <label>DIPDER</label>
+                </value>
+                <value>
+                    <fullName>GDCERT</fullName>
+                    <default>false</default>
+                    <label>GDCERT</label>
+                </value>
+                <value>
+                    <fullName>GDERM</fullName>
+                    <default>false</default>
+                    <label>GDERM</label>
+                </value>
+                <value>
+                    <fullName>GPUP</fullName>
+                    <default>false</default>
+                    <label>GPUP</label>
+                </value>
+                <value>
+                    <fullName>MEDBUS</fullName>
+                    <default>false</default>
+                    <label>MEDBUS</label>
+                </value>
+                <value>
+                    <fullName>PCDER</fullName>
+                    <default>false</default>
+                    <label>PCDER</label>
+                </value>
+                <value>
+                    <fullName>PCOP</fullName>
+                    <default>false</default>
+                    <label>PCOP</label>
+                </value>
+                <value>
+                    <fullName>SCCONF-2016</fullName>
+                    <default>false</default>
+                    <label>SCCONF-2016</label>
+                </value>
+                <value>
+                    <fullName>SCMAS</fullName>
+                    <default>false</default>
+                    <label>SCMAS</label>
+                </value>
+                <value>
+                    <fullName>SCMED</fullName>
+                    <default>false</default>
+                    <label>SCMED</label>
+                </value>
+                <value>
+                    <fullName>SCMED Online</fullName>
+                    <default>false</default>
+                    <label>SCMED Online</label>
+                </value>
+                <value>
+                    <fullName>SCSUG</fullName>
+                    <default>false</default>
+                    <label>SCSUG</label>
+                </value>
+                <value>
+                    <fullName>SCTIC</fullName>
+                    <default>false</default>
+                    <label>SCTIC</label>
+                </value>
+                <value>
+                    <fullName>SKBUS</fullName>
+                    <default>false</default>
+                    <label>SKBUS</label>
+                </value>
+                <value>
+                    <fullName>SKINBUS Online</fullName>
+                    <default>false</default>
+                    <label>SKINBUS Online</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Created_by_Api__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This checkbox will be true if opportunity is created by api.</description>
+        <externalId>false</externalId>
+        <label>Created by Api</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>DM</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Assessment_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Requirements Completed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_CPD_Points_Submitted__c</fullName>
+        <externalId>false</externalId>
+        <label>Date CPD Points Submitted</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Cancelled_or_Refunded__c</fullName>
+        <description>This is the date that a refund or cancellation was processed. Does not affect transfers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the date that a refund or cancellation was processed. Does not affect transfers</inlineHelpText>
+        <label>Date Cancelled or Refunded</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Healthcert_Cert_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Healthcert Cert Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Uni_Certificate_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Uni Certificate Sent</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Diet_Requirements_for_Conference_dinner__c</fullName>
+        <externalId>false</externalId>
+        <label>Diet Requirements for Conference dinner</label>
+        <length>200</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discovery_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Discovery Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Duplicate_Key__c</fullName>
+        <externalId>false</externalId>
+        <label>Duplicate Key</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exam_1_Passed__c</fullName>
+        <externalId>false</externalId>
+        <label>Exam 1 Passed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Exam_2_Passed__c</fullName>
+        <externalId>false</externalId>
+        <label>Exam 2 Passed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Extra_Delegate_1_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Delegate 1 Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extra_Delegate_1_Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Delegate 1 Position</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Doctor</fullName>
+                    <default>false</default>
+                    <label>Doctor</label>
+                </value>
+                <value>
+                    <fullName>Other Administration Staff</fullName>
+                    <default>false</default>
+                    <label>Other Administration Staff</label>
+                </value>
+                <value>
+                    <fullName>Practice Manager</fullName>
+                    <default>false</default>
+                    <label>Practice Manager</label>
+                </value>
+                <value>
+                    <fullName>Practice Owner Doctor</fullName>
+                    <default>false</default>
+                    <label>Practice Owner Doctor</label>
+                </value>
+                <value>
+                    <fullName>Practice Owner non-Doctor</fullName>
+                    <default>false</default>
+                    <label>Practice Owner non-Doctor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Extra_Delegate_2_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Delegate 2 Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extra_Delegate_2_Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Delegate 2 Position</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Other Administration Staff</fullName>
+                    <default>false</default>
+                    <label>Other Administration Staff</label>
+                </value>
+                <value>
+                    <fullName>Practice Owner Doctor</fullName>
+                    <default>false</default>
+                    <label>Practice Owner Doctor</label>
+                </value>
+                <value>
+                    <fullName>Doctor</fullName>
+                    <default>false</default>
+                    <label>Doctor</label>
+                </value>
+                <value>
+                    <fullName>Practice Manager</fullName>
+                    <default>false</default>
+                    <label>Practice Manager</label>
+                </value>
+                <value>
+                    <fullName>Practice Owner non-Doctor</fullName>
+                    <default>false</default>
+                    <label>Practice Owner non-Doctor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Extra_Delegate_3_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Delegate 3 Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extra_Delegate_3_Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Delegate 3 Position</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Doctor</fullName>
+                    <default>false</default>
+                    <label>Doctor</label>
+                </value>
+                <value>
+                    <fullName>Practice Manager</fullName>
+                    <default>false</default>
+                    <label>Practice Manager</label>
+                </value>
+                <value>
+                    <fullName>Practice Owner Doctor</fullName>
+                    <default>false</default>
+                    <label>Practice Owner Doctor</label>
+                </value>
+                <value>
+                    <fullName>Practice Owner non-Doctor</fullName>
+                    <default>false</default>
+                    <label>Practice Owner non-Doctor</label>
+                </value>
+                <value>
+                    <fullName>Other Administration Staff</fullName>
+                    <default>false</default>
+                    <label>Other Administration Staff</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Extra_Delegate_4_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Delegate 4 Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extra_Delegate_4_Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Extra Delegate 4 Position</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Doctor</fullName>
+                    <default>false</default>
+                    <label>Doctor</label>
+                </value>
+                <value>
+                    <fullName>Other Administration Staff</fullName>
+                    <default>false</default>
+                    <label>Other Administration Staff</label>
+                </value>
+                <value>
+                    <fullName>Practice Manager</fullName>
+                    <default>false</default>
+                    <label>Practice Manager</label>
+                </value>
+                <value>
+                    <fullName>Practice Owner Doctor</fullName>
+                    <default>false</default>
+                    <label>Practice Owner Doctor</label>
+                </value>
+                <value>
+                    <fullName>Practice Owner non-Doctor</fullName>
+                    <default>false</default>
+                    <label>Practice Owner non-Doctor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Focus_Group__c</fullName>
+        <externalId>false</externalId>
+        <label>Focus Group</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Free_Of_Charge_Reason__c</fullName>
+        <description>The reason they were given an FOC for this course</description>
+        <externalId>false</externalId>
+        <label>Free Of Charge Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Dermoscopy Scholarship</fullName>
+                    <default>false</default>
+                    <label>Dermoscopy Scholarship</label>
+                </value>
+                <value>
+                    <fullName>Doctor for Development</fullName>
+                    <default>false</default>
+                    <label>Doctor for Development</label>
+                </value>
+                <value>
+                    <fullName>Make Good for Poor Eval</fullName>
+                    <default>false</default>
+                    <label>Make Good for Poor Eval</label>
+                </value>
+                <value>
+                    <fullName>NSCC Doctor</fullName>
+                    <default>false</default>
+                    <label>NSCC Doctor</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>PE Request</fullName>
+                    <default>false</default>
+                    <label>PE Request</label>
+                </value>
+                <value>
+                    <fullName>Course Transfer</fullName>
+                    <default>false</default>
+                    <label>Course Transfer</label>
+                </value>
+                <value>
+                    <fullName>Sonic Pathology</fullName>
+                    <default>false</default>
+                    <label>Sonic Pathology</label>
+                </value>
+                <value>
+                    <fullName>Bundle with other course</fullName>
+                    <default>false</default>
+                    <label>Bundle with other course</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HC_Leader__c</fullName>
+        <description>The HealthCert Education Adviser who is the Leader for this opportunity and receives recognition for the sale.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The HealthCert Education Adviser who is the Leader for this opportunity and receives recognition for the sale.</inlineHelpText>
+        <label>HC Leader</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AMBER</fullName>
+                    <default>false</default>
+                    <label>AMBER</label>
+                </value>
+                <value>
+                    <fullName>CAMPBELL</fullName>
+                    <default>false</default>
+                    <label>CAMPBELL</label>
+                </value>
+                <value>
+                    <fullName>DON</fullName>
+                    <default>false</default>
+                    <label>DON</label>
+                </value>
+                <value>
+                    <fullName>MASTER</fullName>
+                    <default>true</default>
+                    <label>MASTER</label>
+                </value>
+                <value>
+                    <fullName>OWEN</fullName>
+                    <default>false</default>
+                    <label>OWEN</label>
+                </value>
+                <value>
+                    <fullName>RICHARD</fullName>
+                    <default>false</default>
+                    <label>RICHARD</label>
+                </value>
+                <value>
+                    <fullName>LUCY</fullName>
+                    <default>false</default>
+                    <label>LUCY</label>
+                </value>
+                <value>
+                    <fullName>ADELINA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ADELINA</label>
+                </value>
+                <value>
+                    <fullName>ADMIN</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ADMIN</label>
+                </value>
+                <value>
+                    <fullName>AURELIO</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>AURELIO</label>
+                </value>
+                <value>
+                    <fullName>Automated Process</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Automated Process</label>
+                </value>
+                <value>
+                    <fullName>BOYD</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>BOYD</label>
+                </value>
+                <value>
+                    <fullName>CHRISW</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CHRISW</label>
+                </value>
+                <value>
+                    <fullName>Campbell Elton</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Campbell Elton</label>
+                </value>
+                <value>
+                    <fullName>Chatter Expert</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Chatter Expert</label>
+                </value>
+                <value>
+                    <fullName>Chris Watt</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Chris Watt</label>
+                </value>
+                <value>
+                    <fullName>DARREN</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>DARREN</label>
+                </value>
+                <value>
+                    <fullName>DM User</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>DM User</label>
+                </value>
+                <value>
+                    <fullName>EMMA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>EMMA</label>
+                </value>
+                <value>
+                    <fullName>Emma Kipping</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Emma Kipping</label>
+                </value>
+                <value>
+                    <fullName>Hamish Elton</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Hamish Elton</label>
+                </value>
+                <value>
+                    <fullName>JACKIE</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>JACKIE</label>
+                </value>
+                <value>
+                    <fullName>JAN</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>JAN</label>
+                </value>
+                <value>
+                    <fullName>JEREMY</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>JEREMY</label>
+                </value>
+                <value>
+                    <fullName>Jackie Lyn Delfin-Anapio</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Jackie Lyn Delfin-Anapio</label>
+                </value>
+                <value>
+                    <fullName>Kingsford Todd</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Kingsford Todd</label>
+                </value>
+                <value>
+                    <fullName>LEISA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>LEISA</label>
+                </value>
+                <value>
+                    <fullName>LORETTA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>LORETTA</label>
+                </value>
+                <value>
+                    <fullName>Leisa Feeze-Collins</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Leisa Feeze-Collins</label>
+                </value>
+                <value>
+                    <fullName>Loretta Blackborough</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Loretta Blackborough</label>
+                </value>
+                <value>
+                    <fullName>OFFICE</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>OFFICE</label>
+                </value>
+                <value>
+                    <fullName>Richard Silsby</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Richard Silsby</label>
+                </value>
+                <value>
+                    <fullName>SALES</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SALES</label>
+                </value>
+                <value>
+                    <fullName>SHARLA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SHARLA</label>
+                </value>
+                <value>
+                    <fullName>Sharla Garcia</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Sharla Garcia</label>
+                </value>
+                <value>
+                    <fullName>TANIA</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>TANIA</label>
+                </value>
+                <value>
+                    <fullName>Vipin Kumar</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Vipin Kumar</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IqScore</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Loss_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Loss Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1. Not suitable date and / or location</fullName>
+                    <default>false</default>
+                    <label>1. Not suitable date and / or location</label>
+                </value>
+                <value>
+                    <fullName>1.1 Travelling or Annual Leave</fullName>
+                    <default>false</default>
+                    <label>1.1 Travelling or Annual Leave</label>
+                </value>
+                <value>
+                    <fullName>1.2 Have another conference or event</fullName>
+                    <default>false</default>
+                    <label>1.2 Have another conference or event</label>
+                </value>
+                <value>
+                    <fullName>1.3 Can&apos;t get time off</fullName>
+                    <default>false</default>
+                    <label>1.3 Can&apos;t get time off</label>
+                </value>
+                <value>
+                    <fullName>1.4 Do not want to travel</fullName>
+                    <default>false</default>
+                    <label>1.4 Do not want to travel</label>
+                </value>
+                <value>
+                    <fullName>1.5 Waiting to complete exams</fullName>
+                    <default>false</default>
+                    <label>1.5 Waiting to complete exams</label>
+                </value>
+                <value>
+                    <fullName>1.6 International Doctor</fullName>
+                    <default>false</default>
+                    <label>1.6 International Doctor</label>
+                </value>
+                <value>
+                    <fullName>1.7 Family Commitment</fullName>
+                    <default>false</default>
+                    <label>1.7 Family Commitment</label>
+                </value>
+                <value>
+                    <fullName>2. Enrolled in other HCI course or switched course</fullName>
+                    <default>false</default>
+                    <label>2. Enrolled in other HCI course or switched course</label>
+                </value>
+                <value>
+                    <fullName>3. Just looking</fullName>
+                    <default>false</default>
+                    <label>3. Just looking</label>
+                </value>
+                <value>
+                    <fullName>3.1 Start with other HCI Course</fullName>
+                    <default>false</default>
+                    <label>3.1 Start with other HCI Course</label>
+                </value>
+                <value>
+                    <fullName>3.2 Experience is above this level</fullName>
+                    <default>false</default>
+                    <label>3.2 Experience is above this level</label>
+                </value>
+                <value>
+                    <fullName>3.3 Level of outcome not as expected</fullName>
+                    <default>false</default>
+                    <label>3.3 Level of outcome not as expected</label>
+                </value>
+                <value>
+                    <fullName>3.4 Waiting for new Triennium</fullName>
+                    <default>false</default>
+                    <label>3.4 Waiting for new Triennium</label>
+                </value>
+                <value>
+                    <fullName>4. Prefer Other Learning Method</fullName>
+                    <default>false</default>
+                    <label>4. Prefer Other Learning Method</label>
+                </value>
+                <value>
+                    <fullName>5. Too expensive</fullName>
+                    <default>false</default>
+                    <label>5. Too expensive</label>
+                </value>
+                <value>
+                    <fullName>6. Course Full</fullName>
+                    <default>false</default>
+                    <label>6. Course Full</label>
+                </value>
+                <value>
+                    <fullName>7. Unable to contact</fullName>
+                    <default>false</default>
+                    <label>7. Unable to contact</label>
+                </value>
+                <value>
+                    <fullName>8. Past the course date</fullName>
+                    <default>false</default>
+                    <label>8. Past the course date</label>
+                </value>
+                <value>
+                    <fullName>9. Not Enough Capacity to Call</fullName>
+                    <default>false</default>
+                    <label>9. Not Enough Capacity to Call</label>
+                </value>
+                <value>
+                    <fullName>Testing</fullName>
+                    <default>false</default>
+                    <label>Testing</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Marker_Paid__c</fullName>
+        <externalId>false</externalId>
+        <label>Marker Paid</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Name_of_marker_assigned__c</fullName>
+        <externalId>false</externalId>
+        <label>Name of marker assigned</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Colin Armstrong</fullName>
+                    <default>false</default>
+                    <label>Colin Armstrong</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Number_of_Delegates__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Delegates</label>
+        <length>10</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OppStatus__c</fullName>
+        <externalId>false</externalId>
+        <label>OppStatus</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>EnrolmentCompleted</fullName>
+                    <default>false</default>
+                    <label>EnrolmentCompleted</label>
+                </value>
+                <value>
+                    <fullName>CreditCardSelected</fullName>
+                    <default>false</default>
+                    <label>Credit Card</label>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>DirectDeposit</fullName>
+                    <default>false</default>
+                    <label>DirectDeposit</label>
+                </value>
+                <value>
+                    <fullName>Free of Charge</fullName>
+                    <default>false</default>
+                    <label>Free of Charge</label>
+                </value>
+                <value>
+                    <fullName>Waitlist</fullName>
+                    <default>false</default>
+                    <label>Waitlist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Change Required</fullName>
+                    <default>false</default>
+                    <label>No Change Required</label>
+                </value>
+                <value>
+                    <fullName>Product Not Found</fullName>
+                    <default>false</default>
+                    <label>Product Not Found</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Opportunity_UTM__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity UTM</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Oppty_ExternalId__c</fullName>
+        <externalId>true</externalId>
+        <label>Oppty ExternalId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pack_Sent_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Pack Sent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pack_Tracking_Number__c</fullName>
+        <description>Pack tracking number from courier</description>
+        <externalId>false</externalId>
+        <label>Pack Tracking Number</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PartnerMarketing__c</fullName>
+        <externalId>false</externalId>
+        <label>PartnerMarketing</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cheque</fullName>
+                    <default>false</default>
+                    <label>Cheque</label>
+                </value>
+                <value>
+                    <fullName>Credit Card</fullName>
+                    <default>false</default>
+                    <label>Credit Card</label>
+                </value>
+                <value>
+                    <fullName>Deferred</fullName>
+                    <default>false</default>
+                    <label>Deferred</label>
+                </value>
+                <value>
+                    <fullName>Direct Debit</fullName>
+                    <default>false</default>
+                    <label>Direct Debit</label>
+                </value>
+                <value>
+                    <fullName>Direct Deposit</fullName>
+                    <default>false</default>
+                    <label>Direct Deposit</label>
+                </value>
+                <value>
+                    <fullName>Free of Charge</fullName>
+                    <default>false</default>
+                    <label>Free of Charge</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Cash</fullName>
+                    <default>false</default>
+                    <label>Cash</label>
+                </value>
+                <value>
+                    <fullName>AMEX</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>AMEX</label>
+                </value>
+                <value>
+                    <fullName>American Express</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>American Express</label>
+                </value>
+                <value>
+                    <fullName>Corporate Account</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Corporate Account</label>
+                </value>
+                <value>
+                    <fullName>Paid in Full</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Paid in Full</label>
+                </value>
+                <value>
+                    <fullName>Payment via Credit Card</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Payment via Credit Card</label>
+                </value>
+                <value>
+                    <fullName>Payment via Direct Deposit</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Payment via Direct Deposit</label>
+                </value>
+                <value>
+                    <fullName>UQ Masters Account</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>UQ Masters Account</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Free of Charge</fullName>
+                    <default>false</default>
+                    <label>Free of Charge</label>
+                </value>
+                <value>
+                    <fullName>NotPaid</fullName>
+                    <default>false</default>
+                    <label>NotPaid</label>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>Unpaid</fullName>
+                    <default>false</default>
+                    <label>Unpaid</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Post_Course_Activity_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Post-Course Activity Complete</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Post_Course_Reflective_Activity_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Course Reflective Activity # 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pre_Course_Activity_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-Course Activity # 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pre_Course_OR_Lit_Discuss_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-Course OR Lit Discuss Complete</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Presenter_Fee_Due__c</fullName>
+        <externalId>false</externalId>
+        <label>Presenter Fee Due</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Product_Serial__c</fullName>
+        <description>Serial # for products which are sent out</description>
+        <externalId>false</externalId>
+        <label>Product Serial #</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Professional_Requirement_1__c</fullName>
+        <externalId>false</externalId>
+        <label>Professional Requirement 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Professional_Requirement_2__c</fullName>
+        <externalId>false</externalId>
+        <label>Professional Requirement 2</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Professional_Requirement_3__c</fullName>
+        <externalId>false</externalId>
+        <label>Professional Requirement 3</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ROI_Analysis_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>ROI Analysis Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Received_from_marker__c</fullName>
+        <externalId>false</externalId>
+        <label>Received from marker</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>RegistrarTrainingProvider__c</fullName>
+        <externalId>false</externalId>
+        <label>RegistrarTrainingProvider</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Registration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Registration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Revenue__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Call__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Call</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0-Not Called</fullName>
+                    <default>false</default>
+                    <label>0-Not Called</label>
+                </value>
+                <value>
+                    <fullName>1-Called-No Answer</fullName>
+                    <default>false</default>
+                    <label>1-Called-No Answer</label>
+                </value>
+                <value>
+                    <fullName>2-Called-Message</fullName>
+                    <default>false</default>
+                    <label>2-Called-Message</label>
+                </value>
+                <value>
+                    <fullName>3-Called-Message &amp; SMS</fullName>
+                    <default>false</default>
+                    <label>3-Called-Message &amp; SMS</label>
+                </value>
+                <value>
+                    <fullName>4-Called-Sent Email</fullName>
+                    <default>false</default>
+                    <label>4-Called-Sent Email</label>
+                </value>
+                <value>
+                    <fullName>5-Called-Not Available</fullName>
+                    <default>false</default>
+                    <label>5-Called-Not Available</label>
+                </value>
+                <value>
+                    <fullName>6-Speak</fullName>
+                    <default>false</default>
+                    <label>6-Speak</label>
+                </value>
+                <value>
+                    <fullName>7-Live Chat</fullName>
+                    <default>false</default>
+                    <label>7-Live Chat</label>
+                </value>
+                <value>
+                    <fullName>8-Email Only</fullName>
+                    <default>false</default>
+                    <label>8-Email Only</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Shortid__c</fullName>
+        <externalId>false</externalId>
+        <label>Shortid</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Source_of_Enquiry_or_Registration__c</fullName>
+        <externalId>false</externalId>
+        <label>Source of Enquiry or Registration</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACRRM Newsletter</fullName>
+                    <default>false</default>
+                    <label>ACRRM Newsletter</label>
+                </value>
+                <value>
+                    <fullName>Allied Medical</fullName>
+                    <default>false</default>
+                    <label>Allied Medical</label>
+                </value>
+                <value>
+                    <fullName>ARL</fullName>
+                    <default>false</default>
+                    <label>ARL</label>
+                </value>
+                <value>
+                    <fullName>Australian Doctor Magazine</fullName>
+                    <default>false</default>
+                    <label>Australian Doctor Magazine</label>
+                </value>
+                <value>
+                    <fullName>Australian Family Physician</fullName>
+                    <default>false</default>
+                    <label>Australian Family Physician</label>
+                </value>
+                <value>
+                    <fullName>Colleague Referral</fullName>
+                    <default>false</default>
+                    <label>Colleague Referral</label>
+                </value>
+                <value>
+                    <fullName>College or Association</fullName>
+                    <default>false</default>
+                    <label>College or Association</label>
+                </value>
+                <value>
+                    <fullName>Direct Email</fullName>
+                    <default>false</default>
+                    <label>Direct Email</label>
+                </value>
+                <value>
+                    <fullName>Direct Mail</fullName>
+                    <default>false</default>
+                    <label>Direct Mail</label>
+                </value>
+                <value>
+                    <fullName>Division Newsletter</fullName>
+                    <default>false</default>
+                    <label>Division Newsletter</label>
+                </value>
+                <value>
+                    <fullName>Fax</fullName>
+                    <default>false</default>
+                    <label>Fax</label>
+                </value>
+                <value>
+                    <fullName>Fax News Release</fullName>
+                    <default>false</default>
+                    <label>Fax News Release</label>
+                </value>
+                <value>
+                    <fullName>GP Conference</fullName>
+                    <default>false</default>
+                    <label>GP Conference</label>
+                </value>
+                <value>
+                    <fullName>GP16 Conference</fullName>
+                    <default>false</default>
+                    <label>GP16 Conference</label>
+                </value>
+                <value>
+                    <fullName>HelloBar</fullName>
+                    <default>false</default>
+                    <label>HelloBar</label>
+                </value>
+                <value>
+                    <fullName>IMC Conference</fullName>
+                    <default>false</default>
+                    <label>IMC Conference</label>
+                </value>
+                <value>
+                    <fullName>Internet Research</fullName>
+                    <default>false</default>
+                    <label>Internet Research</label>
+                </value>
+                <value>
+                    <fullName>Internet Search</fullName>
+                    <default>false</default>
+                    <label>Internet Search</label>
+                </value>
+                <value>
+                    <fullName>Last Years Courses</fullName>
+                    <default>false</default>
+                    <label>Last Years Courses</label>
+                </value>
+                <value>
+                    <fullName>Masters Student</fullName>
+                    <default>false</default>
+                    <label>Masters Student</label>
+                </value>
+                <value>
+                    <fullName>Medical Observer</fullName>
+                    <default>false</default>
+                    <label>Medical Observer</label>
+                </value>
+                <value>
+                    <fullName>Medical Republic</fullName>
+                    <default>false</default>
+                    <label>Medical Republic</label>
+                </value>
+                <value>
+                    <fullName>Molescan</fullName>
+                    <default>false</default>
+                    <label>Molescan</label>
+                </value>
+                <value>
+                    <fullName>New Zealand Doctor</fullName>
+                    <default>false</default>
+                    <label>New Zealand Doctor</label>
+                </value>
+                <value>
+                    <fullName>Online Ads</fullName>
+                    <default>false</default>
+                    <label>Online Ads</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Past Conference</fullName>
+                    <default>false</default>
+                    <label>Past Conference</label>
+                </value>
+                <value>
+                    <fullName>Phone</fullName>
+                    <default>false</default>
+                    <label>Phone</label>
+                </value>
+                <value>
+                    <fullName>Previous Course Attendance</fullName>
+                    <default>false</default>
+                    <label>Previous Course Attendance</label>
+                </value>
+                <value>
+                    <fullName>Print Brochure</fullName>
+                    <default>false</default>
+                    <label>Print Brochure</label>
+                </value>
+                <value>
+                    <fullName>RACGP Faculty Newsletter</fullName>
+                    <default>false</default>
+                    <label>RACGP Faculty Newsletter</label>
+                </value>
+                <value>
+                    <fullName>RACGP Newsletter</fullName>
+                    <default>false</default>
+                    <label>RACGP Newsletter</label>
+                </value>
+                <value>
+                    <fullName>Web Site Form</fullName>
+                    <default>false</default>
+                    <label>Web Site Form</label>
+                </value>
+                <value>
+                    <fullName>Friday Facts</fullName>
+                    <default>false</default>
+                    <label>Friday Facts</label>
+                </value>
+                <value>
+                    <fullName>Professor David Wilkinson</fullName>
+                    <default>false</default>
+                    <label>Professor David Wilkinson</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Stage_Change_Date__c</fullName>
+        <description>requested by client as  per their data base</description>
+        <externalId>false</externalId>
+        <label>Stage Change Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Standard_Cases_Recevied__c</fullName>
+        <externalId>false</externalId>
+        <label>Standard Cases Recevied</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>false</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>true</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Won</fullName>
+                    <default>false</default>
+                    <label>Won</label>
+                </value>
+                <value>
+                    <fullName>Lost</fullName>
+                    <default>false</default>
+                    <label>Lost</label>
+                </value>
+                <value>
+                    <fullName>Abandoned</fullName>
+                    <default>false</default>
+                    <label>Abandoned</label>
+                </value>
+                <value>
+                    <fullName>Suspended</fullName>
+                    <default>false</default>
+                    <label>Suspended</label>
+                </value>
+                <value>
+                    <fullName>CreditCardSelected</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>CreditCardSelected</label>
+                </value>
+                <value>
+                    <fullName>EnrolmentCompleted</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>EnrolmentCompleted</label>
+                </value>
+                <value>
+                    <fullName>Lost or Abandoned</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Lost or Abandoned</label>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>Waitlist</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Waitlist</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Submitted_for_review__c</fullName>
+        <externalId>false</externalId>
+        <label>Submitted for review</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Tickets__c</fullName>
+        <externalId>false</externalId>
+        <label>Tickets</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>true</default>
+                    <label>0</label>
+                </value>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+                <value>
+                    <fullName>8</fullName>
+                    <default>false</default>
+                    <label>8</label>
+                </value>
+                <value>
+                    <fullName>9</fullName>
+                    <default>false</default>
+                    <label>9</label>
+                </value>
+                <value>
+                    <fullName>10</fullName>
+                    <default>false</default>
+                    <label>10</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Webinars_Attended_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Webinars Attended (Number)</label>
+        <precision>16</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>WorkbookFormat__c</fullName>
+        <externalId>false</externalId>
+        <label>WorkbookFormat</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Workbook_Paid__c</fullName>
+        <description>For online courses - has the participant chosen to pay for their workbook.  If Blank - assume Workbook is included, If Yes - a Workbook is included.  If No - no Workbook to be sent.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For online courses - has the participant chosen to pay for their workbook.  If Blank - assume Workbook is included, If Yes - a Workbook is included.  If No - no Workbook to be sent.</inlineHelpText>
+        <label>Workbook Paid</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>hcreg_country__c</fullName>
+        <externalId>false</externalId>
+        <label>HCREG Country</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AU</fullName>
+                    <default>true</default>
+                    <label>AU</label>
+                </value>
+                <value>
+                    <fullName>EU</fullName>
+                    <default>false</default>
+                    <label>EU</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>OPPORTUNITY.TYPE</columns>
+        <columns>OPPORTUNITY.LEAD_SOURCE</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>DM__c</columns>
+        <columns>Revenue__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Paid</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>5/16/2019</value>
+        </filters>
+        <label>All Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>Default_Opportunity_Pipeline</fullName>
+        <booleanFilter>(1 OR 2)</booleanFilter>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <label>Opportunity Pipeline</label>
+    </listViews>
+    <listViews>
+        <fullName>Enrolments_Paid_Last_Week</fullName>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>HC_Leader__c</columns>
+        <columns>Source_of_Enquiry_or_Registration__c</columns>
+        <columns>Payment_Status__c</columns>
+        <columns>Free_Of_Charge_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_WEEK</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Paid</value>
+        </filters>
+        <label>Enrolments Paid Last Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Enrolments_Paid_This_Week</fullName>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>HC_Leader__c</columns>
+        <columns>Source_of_Enquiry_or_Registration__c</columns>
+        <columns>Payment_Status__c</columns>
+        <columns>Free_Of_Charge_Reason__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Paid</value>
+        </filters>
+        <label>Enrolments Paid This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Paid</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Today_s_New_Opportunities</fullName>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>HC_Leader__c</columns>
+        <columns>DM__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Created_by_Api__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Today&apos;s New Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>Won</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Won</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>HC_Leader__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.AMOUNT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>HC_Leader__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Cannot_go_Back_to_ER</fullName>
+        <active>true</active>
+        <description>This rule avoids backward change from forward stage to ER</description>
+        <errorConditionFormula>OR(
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Cancelled&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;RPL&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Presenter&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Completed&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Attended&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Paid&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Waitlist&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Clicked Enroled&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Enrolment Completed&apos;) ,ISPICKVAL(StageName , &apos;Enquiry Received&apos;) ))</errorConditionFormula>
+        <errorDisplayField>StageName</errorDisplayField>
+        <errorMessage>Stage cannot go backward</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_go_to_New_Opp_Stage</fullName>
+        <active>true</active>
+        <description>This rule avoids the change of stage from enquiry received to new opportunity</description>
+        <errorConditionFormula>OR(AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Enquiry Received&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Cancelled&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;RPL&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Presenter&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Completed&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Attended&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Paid&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Waitlist&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Clicked Enrol&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ),
+AND( ISPICKVAL(PRIORVALUE(StageName), &apos;Enrolment Completed&apos;) ,ISPICKVAL(StageName , &apos;New Opportunity&apos;) ))</errorConditionFormula>
+        <errorDisplayField>StageName</errorDisplayField>
+        <errorMessage>Stage cannot be changed to New Opportunity.(cannot go backward)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lock_amount_field</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR
+(ISPICKVAL(StageName, &quot;Paid&quot;),
+ISPICKVAL(StageName, &quot;Attended&quot;),
+ISPICKVAL(StageName, &quot;Completed&quot;)),
+NOT(ISBLANK(Amount)),
+ISCHANGED(Amount)
+)</errorConditionFormula>
+        <errorDisplayField>Amount</errorDisplayField>
+        <errorMessage>Can not change the Amount field.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Composer_OAuth</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+OAuth buttons require additional setup. Please see the Composer Installation Guide for more details.
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Composer Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer (OAuth)</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Opportunity.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>APXTConga4__Conga_Mail_Merge</fullName>
+        <availability>online</availability>
+        <description>*** DO NOT USE THIS BUTTON ON A PAGE LAYOUT *** 
+
+COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. Then add optional parameters to finely tune the button&apos;s behavior. See the Conga Configuration Guide for details.</description>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>false</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>660</height>
+        <isResizable>false</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Conga Composer</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>https://composer.congamerge.com
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Opportunity.Id}</url>
+        <width>900</width>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_Certificate</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Create Certificate</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer?SolMgr=1 
+&amp;serverUrl={!API.Partner_Server_URL_370} 
+&amp;Id={!Opportunity.Id} 
+&amp;PDFIQ=100
+&amp;FP0=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Getting_Started_Test</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Getting Started Test</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/APXTConga4__Conga_Composer
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Opportunity.Id}
+&amp;QueryId=[Product]a0X0l000001aiqm
+&amp;FP0=2
+&amp;PS0=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SDOC__Email_Docs</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Email S-Docs</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/SDOC__SDEmail?id={!Opportunity.Id}&amp;Object=Opportunity</url>
+    </webLinks>
+    <webLinks>
+        <fullName>SDOC__S_Docs</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>S-Docs</masterLabel>
+        <openType>sidebar</openType>
+        <protected>false</protected>
+        <url>/apex/SDOC__SDCreate1?id={!Opportunity.Id}&amp;Object=Opportunity</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_Mail</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send Mail Aj test</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+try{ 
+var strRecId = &quot;{!Opportunity.Id}&quot;; 
+var date_complete=&quot;{!Opportunity.Date_Assessment_Completed__c}&quot;;
+
+
+if(date_complete!=&apos;&apos;){
+//alert(&apos;true&apos;);
+var result=sforce.apex.execute(&quot;SendEmail_with_congaDoc&quot;,&quot;send_certifiacte&quot;,{opportunity_id:strRecId});
+alert(&apos;----&gt;success--&gt;&apos;+result);
+}else{
+alert(&apos;Please fill the Date Requirements Completed &apos;);
+}
+
+} 
+catch(err) { 
+txt=&quot;There was an error on this page.\n\n&quot;; 
+txt+=&quot;Error description: &quot; + err.description + &quot;\n\n&quot;; 
+txt+=&quot;Click OK to continue.\n\n&quot;; 
+alert(txt); 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>zaapit__zp_actions</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>ZP Actions</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!requireScript($Label.zaapit__zp_action_link)}</url>
+    </webLinks>
+</CustomObject>

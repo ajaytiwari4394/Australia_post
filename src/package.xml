@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>*</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexComponent</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomLabels</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Error_Log__c</members>
+        <members>Notes__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Update_HCREG_contact</members>
+        <members>Update_HCREG_contact-1</members>
+        <members>Update_HCREG_contact-2</members>
+        <members>Update_HCREG_contact-4</members>
+        <members>Update_HCREG_contact-5</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>APXTConga4</members>
+        <members>HubSpot_Inc</members>
+        <members>SDOC</members>
+        <members>aircall</members>
+        <members>datasan</members>
+        <members>sf_chttr_apps</members>
+        <members>sf_com_apps</members>
+        <members>zaapit</members>
+        <name>InstalledPackage</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Account-Account Layout SDoc</members>
+        <members>AccountContactRelation-Account Contact Relationship Layout</members>
+        <members>Asset-Asset Layout</members>
+        <members>AssetRelationship-Asset Relationship Layout</members>
+        <members>Campaign-Campaign Layout</members>
+        <members>CampaignMember-Campaign Member Page Layout</members>
+        <members>CampaignMemberStatus-Campaign Member Status Layout</members>
+        <members>Case-Case Layout</members>
+        <members>CaseClose-Close Case Layout</members>
+        <members>CaseInteraction-Case Feed Layout</members>
+        <members>CollaborationGroup-Group Layout</members>
+        <members>CommunityMemberLayout-Community Member Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Contact-Contact Layout SDoc</members>
+        <members>ContentVersion-Content Version</members>
+        <members>Contract-Contract Layout</members>
+        <members>Contract-Contract Layout SDoc</members>
+        <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+        <members>EmailMessage-Email Message Layout</members>
+        <members>Error_Log__c-Error Log Layout</members>
+        <members>Event-Event Layout</members>
+        <members>FeedItem-Feed Item Layout</members>
+        <members>Global-Global Layout</members>
+        <members>Idea-Idea Layout</members>
+        <members>Individual-Individual Layout</members>
+        <members>Lead-Lead Layout</members>
+        <members>Lead-Lead Layout SDoc</members>
+        <members>ListEmail-List Email Layout</members>
+        <members>Macro-Macro Layout</members>
+        <members>Notes__c-Note Layout</members>
+        <members>Opportunity-Opportunity Layout</members>
+        <members>Opportunity-Opportunity Layout SDoc</members>
+        <members>OpportunityLineItem-Opportunity Product Layout</members>
+        <members>Order-Order Layout</members>
+        <members>OrderItem-Order Product Layout</members>
+        <members>PersonAccount-Person Account Layout</members>
+        <members>Pricebook2-Price Book Layout</members>
+        <members>PricebookEntry-Price Book Entry Layout</members>
+        <members>Product2-Product Layout</members>
+        <members>ProfileSkill-Skill Layout</members>
+        <members>ProfileSkillEndorsement-Endorsement Layout</members>
+        <members>ProfileSkillUser-Skill User Layout</members>
+        <members>QuickText-Quick Text Layout</members>
+        <members>Quote-Quote Layout</members>
+        <members>QuoteLineItem-Quote Line Item Layout</members>
+        <members>Scorecard-Scorecard Layout</members>
+        <members>ScorecardAssociation-Scorecard Association Layout</members>
+        <members>ScorecardMetric-Scorecard Metric Layout</members>
+        <members>SocialPersona-Social Persona Layout</members>
+        <members>SocialPost-Social Post Layout</members>
+        <members>Solution-Solution Layout</members>
+        <members>Task-Task Layout</members>
+        <members>User-User Layout</members>
+        <members>UserAlt-User Profile Layout</members>
+        <members>UserAppMenuItem-Application Layout</members>
+        <members>WorkAccess-Access Layout</members>
+        <members>WorkBadge-Badge Layout</members>
+        <members>WorkBadge-Badge Received Layout 192</members>
+        <members>WorkBadgeDefinition-Badge Definition Layout</members>
+        <members>WorkBadgeDefinition-Badge Layout 192</members>
+        <members>WorkThanks-Thanks Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Account</members>
+        <members>Contact</members>
+        <members>Lead</members>
+        <members>Opportunity</members>
+        <members>Task</members>
+        <name>Workflow</name>
+    </types>
+    <version>46.0</version>
+</Package>

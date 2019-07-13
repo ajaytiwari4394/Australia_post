@@ -1,0 +1,184 @@
+<!---How to create a visual force page with DataSan demo:
+1.Create a copy of this visual force page
+2.Run the visual force page, and write down all address fields IDs
+3.Edit the new visual force page,copy/Paste fields IDs into each corresponding field
+4.Add DataSan key at bottom of page
+5.Save and run the visual force page
+--->
+ 
+<apex:page sidebar="false" controller="datasan.DemoController">
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://s3-ap-southeast-2.amazonaws.com/datasan/1.2/datasan.min.js"></script>
+<script>
+ 
+  jQuery(document).ready(function() {  
+        datasan.init({
+        
+            key: "{!JSINHTMLENCODE(dsSetting.key)}",
+            harmonyHostedApiUrl: "{!JSINHTMLENCODE(dsSetting.endpoint)}",
+            theme : "flick"
+        });
+    });
+    
+</script>
+
+<apex:sectionHeader title="Datasan" subtitle="Datasan Visualforce Demo"/>
+
+<apex:form >
+    
+    <apex:pageBlock >
+        <apex:pageBlockSection title="Address Lookup" columns="1">
+        
+        <!---Create five input fields: Street,City, State, Postcode, Country and DPID--->
+        
+                <apex:pageBlockSectionItem id="sotList">
+                    <apex:outputText value="Choose source of truth: "/>
+                    <apex:selectList id="sot" size="1">
+                    <apex:selectOptions value="{!availableSOTs}"/>
+                      <!--  <apex:selectoption itemLabel="Australian postal addresses (AUPAF)" itemValue="AUPAF"></apex:selectoption>
+                        <apex:selectoption itemLabel="Australian geo-coded addresses (GNAF)" itemValue="GNAF"></apex:selectoption>
+                        <apex:selectoption itemLabel="New Zealand post addresses (NZPAF)" itemValue="NZPAF"></apex:selectoption>-->
+                       <apex:actionSupport event="onchange" rerender="section" status="actionStatus"/> 
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="City"/>
+                    <apex:inputText id="City"  required="true"/>                  
+                </apex:pageBlockSectionItem>
+        
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Street"/>
+                    <apex:inputText id="Street"   required="true"/> 
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="State" />
+                    <apex:inputText id="State"  required="true"/> 
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Postcode" />
+                    <apex:inputText id="Postcode"  required="true"/> 
+                </apex:pageBlockSectionItem>
+                
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Country" />
+                    <apex:inputText id="Country" required="true"/> 
+                </apex:pageBlockSectionItem>
+
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="DPID/GNAFPID" />
+                    <apex:inputText id="DPID"/> 
+                </apex:pageBlockSectionItem>  
+     
+               <!-- <apex:commandButton value="Save" id="theButton"/>    -->                    
+            </apex:pageBlockSection>
+        
+             <apex:pageBlockbuttons location="bottom" >
+                <div class="text-center col-md-2 col-md-offset-2">
+                      <apex:commandButton value="Reset" onclick="this.form.reset();return false;"/>
+                </div>
+            </apex:pageBlockbuttons>        
+        </apex:pageBlock>
+        
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Company Lookup" columns="1">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Company Name" />
+                        <apex:inputText id="Company"/> 
+                    </apex:pageBlockSectionItem>  
+    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="ABN" />
+                        <apex:inputText id="ABN"/> 
+                    </apex:pageBlockSectionItem>  
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+</apex:form>
+
+<!---
+1. Include sidebar="false" in <apex:page>.
+2. Add javascript references to jQuery and DataSan</apex:page>
+3. Add javascript code to define DataSan key and address fields ids.
+--->
+ 
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+<script type="text/javascript" src="https://s3-ap-southeast-2.amazonaws.com/datasan/scripts/datasan-sf.min.js"></script>
+<script type="text/javascript" src="https://s3-ap-southeast-2.amazonaws.com/datasan/scripts/datasan.min.js"></script>
+<apex:includeScript value="{!URLFOR($Resource.jQuery, '/js/jquery.min.js')}"  />
+<apex:includeScript value="{!URLFOR($Resource.jQuery, '/js/jquery-ui.min.js')}"  />
+<apex:includeScript value="{!$Resource.HHDatasanSfMinJs}"/> -->
+
+<!--<script>
+var datasan__settings = {
+    key : "d2ViQCoudmlzdWFsLmZvcmNlLmNvbToxMjM0NTY=",
+    accounts :[
+        {account : "j_id0:j_id2:j_id3:j_id24:j_id25:Company", abn : "j_id0:j_id2:j_id3:j_id24:j_id27:ABN"}
+    ],
+    addresses : [
+        {  //Add fields IDs. 
+           //To get IDs, run the visual force page first, and then find field IDs by looking at source code 
+           street: "j_id0:j_id2:j_id3:j_id4:j_id12:Street",
+           city: "j_id0:j_id2:j_id3:j_id4:j_id10:City",
+           state: "j_id0:j_id2:j_id3:j_id4:j_id14:State",           
+           postalcode: "j_id0:j_id2:j_id3:j_id4:j_id16:Postcode",
+           country: "j_id0:j_id2:j_id3:j_id4:j_id18:Country",
+           dpid: "j_id0:j_id2:j_id3:j_id4:j_id22:DPID"
+        }
+    ]
+};
+</script> -->
+
+ <script>
+    
+    datasan.autoCompleteLocality(
+        "j_id0:j_id3:j_id4:j_id5:j_id9:City",
+        {   
+            sot   : "j_id0:j_id3:j_id4:j_id5:sotList:sot",
+            menu  : {label: "{locality_name}{suburb}{postal_delivery_type} {state}{townCity}, {postcode}", value: "{locality_name}{suburb}{postal_delivery_type} {state}{townCity}, {postcode}"},
+            select: [
+                    {id: "j_id0:j_id3:j_id4:j_id5:j_id9:City",    value: "{locality_name}{suburb}{postal_delivery_type}"},
+                    {id: "j_id0:j_id3:j_id4:j_id5:j_id15:Postcode",     value: "{postcode}"},
+                    {id: "j_id0:j_id3:j_id4:j_id5:j_id13:State",   value: "{state}{townCity}"},
+                    {id: "j_id0:j_id3:j_id4:j_id5:j_id17:Country",  value: "{country}"},
+                    {id: "j_id0:j_id3:j_id4:j_id5:j_id11:Street",  value: ""},
+                    {id: "j_id0:j_id3:j_id4:j_id5:j_id19:DPID",  value: ""}                                                                
+                    ]
+        }
+    );
+    
+    datasan.autoCompleteAddress("j_id0:j_id3:j_id4:j_id5:j_id11:Street",
+                    {  locality : {city :"j_id0:j_id3:j_id4:j_id5:j_id9:City", postcode : "j_id0:j_id3:j_id4:j_id5:j_id15:Postcode"},
+                    sot   : "j_id0:j_id3:j_id4:j_id5:sotList:sot",
+                    menu  : {label: "<b>{address_line_1}</b><br/>{locality_name}{suburb}{postal_delivery_type} {state}{townCity}, {postcode}", value: "{address_line_1}"},
+                    select: [
+                            {id: "j_id0:j_id3:j_id4:j_id5:j_id9:City",    value: "{locality_name}{suburb}{postal_delivery_type}"},
+                            {id: "j_id0:j_id3:j_id4:j_id5:j_id15:Postcode",     value: "{postcode}"},
+                            {id: "j_id0:j_id3:j_id4:j_id5:j_id13:State",   value: "{state}{townCity}"},
+                            {id: "j_id0:j_id3:j_id4:j_id5:j_id17:Country",  value: "{country}"},
+                            {id: "j_id0:j_id3:j_id4:j_id5:j_id11:Street",  value: "{address_line_1}"},
+                            {id: "j_id0:j_id3:j_id4:j_id5:j_id19:DPID",  value: "{delivery_point_id}"}    
+                            ]
+                }
+   ); 
+   
+   datasan.lookupABN(
+            "j_id0:j_id3:j_id25:j_id26:j_id27:Company",
+                {   select: [
+                        {id: "j_id0:j_id3:j_id25:j_id26:j_id29:ABN",    value: "{abn}"}
+                        ]
+                }          
+            );
+            jQuery("j_id0:j_id3:j_id25:j_id26:j_id27:Company").change(function() {
+                jQuery("j_id0:j_id3:j_id25:j_id26:j_id29:ABN").val("");
+            });
+   
+  
+   
+</script>
+
+</apex:page>

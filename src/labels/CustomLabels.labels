@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Duplicate_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Duplicate Message</shortDescription>
+        <value>Duplicate Opportunity</value>
+    </labels>
+    <labels>
+        <fullName>No_Change_Required</fullName>
+        <categories>Duplicate Opportunity</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Change Required</shortDescription>
+        <value>This oppportunity comes under no change criteria. Please verify opportunity data.</value>
+    </labels>
+    <labels>
+        <fullName>Product_Does_not_exist</fullName>
+        <categories>Product</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Does not exist</shortDescription>
+        <value>No product exists in salesforce with this course id. Please check again.</value>
+    </labels>
+</CustomLabels>

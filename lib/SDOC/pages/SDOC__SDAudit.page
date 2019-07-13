@@ -1,0 +1,24 @@
+<apex:page controller="SDOC.SDUtil" action="{!runSDocsReport}">
+  <!-- SDAudit's runSDocsReport runs if SDConfig param is not specified as 'true';
+  otherwise, this page is used for SDConfig -->
+  <apex:outputPanel rendered="{!$CurrentPage.parameters.SDConfig == 'true'}">
+    <apex:form >
+      <apex:pageBlock title="SDConfig" id="the-pageblock">
+        <apex:pageBlockButtons >
+          <apex:commandButton action="{!updateCustomSettingsTemplate}" 
+          value="Update S-Docs Custom Settings template" 
+          reRender="the-pageblock" oncomplete="alert('S-Docs Custom Settings template updated');" />
+          <apex:commandButton action="{!updateAllActiveTemplates}" 
+          value="Update All Active S-Docs Templates"
+          reRender="the-pageblock" oncomplete="alert('All active S-Docs Templates have been updated');" />
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+          <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Use Legacy DOC formatting" />
+            <apex:inputCheckbox value="{!legacyDOC}" />
+          </apex:pageBlockSectionItem>
+        </apex:pageBlockSection>
+      </apex:pageBlock>
+    </apex:form>
+  </apex:outputPanel>
+</apex:page>

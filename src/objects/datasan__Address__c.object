@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>datasan__Barcode_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for Barcode field.</inlineHelpText>
+        <label>Barcode Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Barcode__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the Barcode field.</inlineHelpText>
+        <label>Barcode Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Bsp_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for Bsp field.</inlineHelpText>
+        <label>Bsp Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Bsp__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the Bsp field.</inlineHelpText>
+        <label>Bsp Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__City_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for City field.</inlineHelpText>
+        <label>City Field Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__City__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the City field. Please note that standard Salesforce field&apos;s have predefined special values.</inlineHelpText>
+        <label>City Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Country_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for Country field.</inlineHelpText>
+        <label>Country Field Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the Country field. Please note that standard Salesforce field&apos;s have predefined special values.</inlineHelpText>
+        <label>Country Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__DPID_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for DPID field.</inlineHelpText>
+        <label>DPID Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__DPID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the DPID field.</inlineHelpText>
+        <label>DPID Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Field_Id_Hint__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IMAGE(&quot;https://d1c24wnrse4bd3.cloudfront.net/api/sf/1.7/images/FieldIdHint.png&quot;, &quot;Field Id Hint&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The character&apos;s highlighted in red indicate the unique Salesforce identifier for a field.</inlineHelpText>
+        <label>Field Id Hint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFConfidence_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for GNAF Confidence field.</inlineHelpText>
+        <label>GNAFConfidence Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFConfidence__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the GNAF Confidence field.</inlineHelpText>
+        <label>GNAFConfidence Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFGroupPID_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>GNAF Group PID field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for GNAF Group PID field.</inlineHelpText>
+        <label>GNAFGroupPID Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFGroupPID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>GNAF Group PID Field Id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the GNAF Group PID field.</inlineHelpText>
+        <label>GNAFGroupPID Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFPID_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for GNAF PID field.</inlineHelpText>
+        <label>GNAFPID Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFPID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the GNAF PID field.</inlineHelpText>
+        <label>GNAFPID Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFPointPID_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>GNAF Point PID Field Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for GNAF Point PID field.</inlineHelpText>
+        <label>GNAFPointPID Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFPointPID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>GNAF Point PID Field Id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the GNAF Point PID field.</inlineHelpText>
+        <label>GNAFPointPID Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFReliability_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>GNAF Reliability Field Name</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for GNAF Reliability field.</inlineHelpText>
+        <label>GNAFReliability Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GNAFReliability__c</fullName>
+        <deprecated>false</deprecated>
+        <description>GNAF Reliability Field Id</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the GNAF Reliability field.</inlineHelpText>
+        <label>GNAFReliability Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GeocodeLevel_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for Geocode Level field.</inlineHelpText>
+        <label>GeocodeLevel Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__GeocodeLevel__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the Geocode Level field.</inlineHelpText>
+        <label>GeocodeLevel Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__LatLong_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for LatLong field.</inlineHelpText>
+        <label>LatLong Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__LatLong__c</fullName>
+        <deprecated>false</deprecated>
+        <description>field id for latlong</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the LatLong field.</inlineHelpText>
+        <label>LatLong Filed Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__MeshBlock_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for MeshBlock field.</inlineHelpText>
+        <label>MeshBlock Field Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__MeshBlock__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the MeshBlock field.</inlineHelpText>
+        <label>MeshBlock Field Id</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Object_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Object Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__ParcelID_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for Parcel ID field.</inlineHelpText>
+        <label>ParcelID Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__ParcelID__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the Parcel ID field.</inlineHelpText>
+        <label>ParcelID Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Postal_Code_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for Postal Code field.</inlineHelpText>
+        <label>Postal Code Field Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Postal_Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the Postal Code field. Please note that standard Salesforce field&apos;s have predefined special values.</inlineHelpText>
+        <label>Postal Code Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__SOT_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for SOT field.</inlineHelpText>
+        <label>SOT Field Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__SOT__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the SOT field.</inlineHelpText>
+        <label>SOT Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Setting__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Setting</label>
+        <referenceTo>datasan__Setting__c</referenceTo>
+        <relationshipLabel>Addresses</relationshipLabel>
+        <relationshipName>AMA_Addresses</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>datasan__State_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for State field.</inlineHelpText>
+        <label>State Field Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__State__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the State field. Please note that standard Salesforce field&apos;s have predefined special values.</inlineHelpText>
+        <label>State Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Street_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for Street field.</inlineHelpText>
+        <label>Street Field Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__Street__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the Street field. Please note that standard Salesforce field&apos;s have predefined special values.</inlineHelpText>
+        <label>Street Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__XYCoordinate_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The API Name for XYCoordinate field.</inlineHelpText>
+        <label>MapGrid Field Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>datasan__XYCoordinate__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>The unique Salesforce identifier for the XYCoordinate field.</inlineHelpText>
+        <label>MapGrid Field Id</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Address</label>
+    <nameField>
+        <label>Address Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Addresses</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>datasan__Street__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>datasan__City__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>datasan__State__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>datasan__Postal_Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>datasan__Country__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>datasan__DPID__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>datasan__Street__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>datasan__City__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>datasan__State__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>datasan__Postal_Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>datasan__Country__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>datasan__DPID__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>datasan__Street__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>datasan__City__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>datasan__State__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>datasan__Country__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>datasan__Postal_Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>datasan__DPID__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>datasan__Street__c</searchFilterFields>
+        <searchFilterFields>datasan__City__c</searchFilterFields>
+        <searchFilterFields>datasan__State__c</searchFilterFields>
+        <searchFilterFields>datasan__Postal_Code__c</searchFilterFields>
+        <searchFilterFields>datasan__Country__c</searchFilterFields>
+        <searchFilterFields>datasan__DPID__c</searchFilterFields>
+        <searchResultsAdditionalFields>datasan__Street__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>datasan__City__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>datasan__State__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>datasan__Postal_Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>datasan__Country__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>datasan__DPID__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>
