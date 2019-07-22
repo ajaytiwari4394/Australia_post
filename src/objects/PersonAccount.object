@@ -1431,6 +1431,10 @@
                 <default>false</default>
             </values>
             <values>
+                <fullName>LORETTA</fullName>
+                <default>false</default>
+            </values>
+            <values>
                 <fullName>MASTER</fullName>
                 <default>false</default>
             </values>

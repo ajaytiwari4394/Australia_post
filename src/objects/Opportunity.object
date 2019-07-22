@@ -1286,6 +1286,11 @@
                     <label>LUCY</label>
                 </value>
                 <value>
+                    <fullName>LORETTA</fullName>
+                    <default>false</default>
+                    <label>LORETTA</label>
+                </value>
+                <value>
                     <fullName>ADELINA</fullName>
                     <default>false</default>
                     <isActive>false</isActive>
@@ -1404,12 +1409,6 @@
                     <default>false</default>
                     <isActive>false</isActive>
                     <label>LEISA</label>
-                </value>
-                <value>
-                    <fullName>LORETTA</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>LORETTA</label>
                 </value>
                 <value>
                     <fullName>Leisa Feeze-Collins</fullName>
@@ -3103,6 +3102,37 @@ COPY THE URL FROM THIS BUTTON and paste it into your own custom button or link. 
         <openType>sidebar</openType>
         <protected>false</protected>
         <url>/apex/SDOC__SDCreate1?id={!Opportunity.Id}&amp;Object=Opportunity</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_For_Print</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Send For Print</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)} 
+try{ 
+var strRecId = &quot;{!Opportunity.Id}&quot;; 
+var date_complete=&quot;{!Opportunity.Date_Assessment_Completed__c}&quot;;
+
+
+if(date_complete!=&apos;&apos;){
+//alert(&apos;true&apos;);
+var result=sforce.apex.execute(&quot;SendEmail_with_congaDoc&quot;,&quot;send_certifiacte_Print&quot;,{opportunity_id:strRecId});
+alert(&apos;----&gt;success--&gt;&apos;+result);
+}else{
+alert(&apos;Please fill the Date Requirements Completed &apos;);
+}
+
+} 
+catch(err) { 
+txt=&quot;There was an error on this page.\n\n&quot;; 
+txt+=&quot;Error description: &quot; + err.description + &quot;\n\n&quot;; 
+txt+=&quot;Click OK to continue.\n\n&quot;; 
+alert(txt); 
+}</url>
     </webLinks>
     <webLinks>
         <fullName>Send_Mail</fullName>

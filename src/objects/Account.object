@@ -3267,6 +3267,11 @@
                     <default>false</default>
                     <label>RICHARD</label>
                 </value>
+                <value>
+                    <fullName>LORETTA</fullName>
+                    <default>false</default>
+                    <label>LORETTA</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -5177,6 +5182,10 @@ IF(Parent.Parent.ParentId==null,0,1)))</formula>
             </values>
             <values>
                 <fullName>DON</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LORETTA</fullName>
                 <default>false</default>
             </values>
             <values>
